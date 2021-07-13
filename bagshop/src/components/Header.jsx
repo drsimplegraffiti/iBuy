@@ -5,7 +5,7 @@ export default function Header(props) {
     <header className="block row center">
       <div>
         <a href="#/">
-          <h1>Small Shopping Cart</h1>
+          <h1> <img className="cart" src="/img/shopping-cart.png" alt="shopping cart" /> i-Buy</h1>
         </a>
       </div>
       <div>

@@ -37,6 +37,10 @@
      color: #20201c;
  }
  
+ .cart {
+     width: 25px;
+ }
+ 
  .empty {
      color: #fff;
  }

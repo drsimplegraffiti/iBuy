@@ -46,6 +46,7 @@ const Basket = (props) => {
                             Checkout
                         </button>
                     </div>
+                     <script src="https://checkout.flutterwave.com/v3.js"></script>
                     </>
             )}
         </aside>

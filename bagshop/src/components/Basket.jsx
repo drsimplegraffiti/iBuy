@@ -8,7 +8,7 @@ const Basket = (props) => {
         
         <aside className="block col-1">
             <h2>Cart Items</h2>
-            <div>{cartItems.length === 0 && <div>Cart is Empty</div>}</div>
+            <div>{cartItems.length === 0 && <div className="empty">Cart is Empty</div>}</div>
             {cartItems.map((item) => (
                 <div key={item.id} className="row">
                     <div className="col-2">{item.name}</div>
@@ -30,15 +30,15 @@ const Basket = (props) => {
                     </div>
                     <div className="row">
                         <div className="col-2">TaxPrice</div>
-                        <div className="col-1 text-right">${taxPrice.toFixed(2)}</div>
+                        <div className="col-1 text-right"> ₦{taxPrice.toFixed(2)}</div>
                     </div>
                     <div className="row">
                         <div className="col-2">Shipping Price</div>
-                        <div className="col-1 text-right">${shippingPrice.toFixed(2)}</div>
+                        <div className="col-1 text-right"> ₦{shippingPrice.toFixed(2)}</div>
                     </div>
                     <div className="row">
                         <div className="col-2"><strong>Total Price</strong> </div>
-                        <div className="col-1 text-right">${totalPrice.toFixed(2)}</div>
+                        <div className="col-1 text-right"> ₦{totalPrice.toFixed(2)}</div>
                     </div>
                     <hr />
                     <div className="row">
